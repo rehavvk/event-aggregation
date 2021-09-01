@@ -1,0 +1,11 @@
+{
+	"name":"com.rehawk.event-aggregation",
+	"version":"0.1.0",
+	"displayName":"Event Aggregation",
+	"unity":"2020.1",
+	"author":{
+		"name":"Frederick Böhke",
+		"email":"frederick@boehke.com",
+		"url":"https://www.boehke.com"
+	}
+}
