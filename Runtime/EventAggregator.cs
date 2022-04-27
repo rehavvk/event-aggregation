@@ -1,5 +1,6 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace Rehawk.EventAggregation
 {
@@ -121,6 +122,13 @@ namespace Rehawk.EventAggregation
         }
         
         public static void UnsubscribeAll()
+        {
+            listeners.Clear();
+            payloadListeners.Clear();
+        }
+        
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        private static void OnSubsystemRegistration()
         {
             listeners.Clear();
             payloadListeners.Clear();
